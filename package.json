@@ -1,0 +1,41 @@
+{
+  "name": "farming-friend",
+  "version": "1.0.0",
+  "description": "A desktop app that shows when and what is best to plant on farms based on weather calculations",
+  "main": "./src/main.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinGITHUBER/Farming-Friend.git"
+  },
+  "keywords": [
+    "farming"
+  ],
+  "contributors": [
+    {
+      "name": "Martin Maroyan",
+      "email": "maroymart@gmail.com"
+    },
+    {
+      "name": "Guilherme Macedo",
+      "email": "alexandreguilhermemx@gmail.com"
+    },
+    {
+      "name": "saivivekvenna",
+      "email": "saivivekvenna@gmail.com"
+    }
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/martinGITHUBER/Farming-Friend/issues"
+  },
+  "homepage": "https://github.com/martinGITHUBER/Farming-Friend#readme",
+  "devDependencies": {
+    "electron": "^12.0.5",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "fs": "*",
+    "path": "^0.12.7"
+  }
+}
