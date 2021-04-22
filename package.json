@@ -32,7 +32,8 @@
   "homepage": "https://github.com/martinGITHUBER/Farming-Friend#readme",
   "devDependencies": {
     "electron": "^12.0.5",
-    "electron-builder": "^22.10.5"
+    "electron-builder": "^22.10.5",
+    "eslint": "^7.24.0"
   },
   "dependencies": {
     "fs": "*",
