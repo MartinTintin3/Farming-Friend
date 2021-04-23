@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "A desktop app that shows when and what is best to plant on farms based on weather calculations",
   "main": "./src/main.js",
-  "scripts": {},
+  "scripts": {
+    "build": "node build.js",
+    "live": "npx electron app/main.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/martinGITHUBER/Farming-Friend.git"
@@ -39,5 +42,33 @@
     "fs": "*",
     "path": "^0.12.7",
     "react": "^17.0.2"
+  },
+  "build": {
+    "appId": "martin.farmingfriend.com",
+    "productName": "Farming Friend",
+    "files": [
+      "app/**/**"
+    ],
+    "directories": {
+      "output": "./dist/${os}/${arch}",
+      "buildResources": "./app/**/**"
+    },
+    "mac": {
+      "category": "public.app-category.weather",
+      "target": [
+        "zip",
+        "dmg",
+        "pkg"
+      ]
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "dmg": {
+      "backgroundColor": "#262626"
+    },
+    "pkg": {
+      "installLocation": "/Applications"
+    }
   }
 }
