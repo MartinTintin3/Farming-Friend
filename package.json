@@ -5,7 +5,7 @@
   "main": "./src/main.js",
   "scripts": {
     "build": "node build.js",
-    "live": "npx electron app/main.js"
+    "live": "npx electron src/main.js"
   },
   "repository": {
     "type": "git",
@@ -47,11 +47,11 @@
     "appId": "martin.farmingfriend.com",
     "productName": "Farming Friend",
     "files": [
-      "app/**/**"
+      "src/**/**"
     ],
     "directories": {
       "output": "./dist/${os}/${arch}",
-      "buildResources": "./app/**/**"
+      "buildResources": "./src/**/**"
     },
     "mac": {
       "category": "public.app-category.weather",
